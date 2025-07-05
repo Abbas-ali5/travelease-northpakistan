@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – TravelEase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>TravelEase</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="trip-planner.html">Trip Planner</a>
+    <a href="stories.html">Travel Stories</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Contact Us</h2>
+  <p><strong>Email:</strong> support@travelease.pk</p>
+  <p><strong>WhatsApp:</strong> +92 300 1234567</p>
+  <p><strong>Office:</strong> Main Bazar Road, Skardu, Gilgit-Baltistan</p>
+  <p><strong>Office Hours:</strong> Mon–Sat, 9:00 AM – 6:00 PM</p>
+
+  <form id="contact-form">
+    <label>Name:<input type="text" name="name" required></label><br>
+    <label>Email:<input type="email" name="email" required></label><br>
+    <label>Subject:<input type="text" name="subject" required></label><br>
+    <label>Message:<textarea name="message" required></textarea></label><br>
+    <button type="submit">Send</button>
+  </form>
+
+  <h3>Follow Us</h3>
+  <p>
+    <a href="#">Facebook</a> | 
+    <a href="#">Instagram</a> | 
+    <a href="#">YouTube</a>
+  </p>
+
+  <h3>Our Location</h3>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Skardu_Map.png" alt="Map of Skardu" width="100%">
+</section>
+
+<footer>
+  &copy; 2025 TravelEase – Discover Northern Pakistan
+</footer>
+
+<script>
+ 
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    alert("Message sent! (Client-side validation only)");
+    e.preventDefault();
+  });
+</script>
+
+</body>
+</html>
