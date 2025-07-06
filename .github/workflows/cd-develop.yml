@@ -1,0 +1,15 @@
+name: CD - Develop Environment
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Echo Dev Deploy
+        run: echo "Deployed to Development Environment"
